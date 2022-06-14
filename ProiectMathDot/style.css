@@ -1,0 +1,57 @@
+body, html {
+  background-color: #121212;
+}
+
+.container:nth-last-of-type(1) {
+  padding: 10px;
+  margin-top: 3rem;
+  width: 700px;
+}
+
+.box {
+  background-color: transparent;
+  color: black;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.column:nth-of-type(1) {
+  background-color: transparent;
+  width: 200px;
+}
+
+.input {
+  width: 290px;
+  background-color: white;
+  color: black;
+}
+
+.input::-webkit-input-placeholder {
+  color: black;
+}
+
+.input:-ms-input-placeholder {
+  color: black;
+}
+
+.input::-ms-input-placeholder {
+  color: black;
+}
+
+.input::placeholder {
+  color: wblack;
+}
+
+option {
+  color: white;
+  background-color: #000007;
+}
+
+option:disabled {
+  color: gray;
+}
+
+#startButton, #resetButton {
+  background-color: #121212;
+}
+/*# sourceMappingURL=style.css.map */

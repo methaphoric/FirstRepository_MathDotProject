@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container card">
+        <header class="container is-info">
+            <h1 class="title is-4">Demo</h1>
+            <h1 class="title is-1"><span id="correct">0 corecte</span> <span id="total"> din 0</span></h1>
+        </header>
+        <section class="container is-info">
+
+            <div class="box is-info">
+                <h1 class="is-size-1-mobile">Select Settings</h1>
+                <select class="select is-rounded" id="selectOp">
+                    <option value="" selected="true" disabled="disabled">Selectează operația matematică</option>
+                    <option value="adunare">adunare</option>
+                    <option value="scadere">scadere</option>
+                    <option value="inmultire" disabled>înmulțire</option>
+                    <option value="impartire" disabled>împărțire</option>
+                </select>
+                <select class="select is-rounded" id="selectDif">
+                    <option value="" selected="true" disabled="disabled">Selectează dificultatea</option>
+                    <option value="Noob">Noob</option>
+                    <option value="Apprentice">Apprentice</option>
+                    <option value="Expert" disabled>Expert(coming soon)</option>
+                    <option value="Master" disabled>Master(coming soon)</option>
+                </select>
+            </div>
+        </section>
+
+
+
+
+
+        <div class="containter is-info columns">
+
+            <div class="column has-text-centered m-auto" id="panel">
+                <span id="randomNo1">?</span> <span id="operator">?</span> <span id="randomNo2">?</span><span>=</span>
+            </div>
+
+            <div class="column m-auto">
+                <form action="/act" id="formSubmit">
+                    <input class="input is-normal" type="text" placeholder="introdu raspunsul și apasă Enter"
+                        id="raspunsulTau" name="result" disabled>
+                    <button class="button is-success is-small" type="submit" id="checkButton" style="display:none;" ;
+                        for="raspunsulTau">Enter</button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class='box'>
+            <button class="button is-info is-small" id="startButton">START</button>
+            <button class="button is-info is-small" id="resetButton">RESET</button>
+        </div>
+
+        <footer class="box" style="display:none;">
+            <img src="img/a.png">
+            <img src="img/s.png">
+            <img src="img/d.png">
+            <img src="img/w.png">
+            <img src="img/space.png">
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
